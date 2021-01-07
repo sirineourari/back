@@ -6,7 +6,7 @@ The suggestions are based on user's behavior and history that contain informatio
 
 The goal of this project is to build a recommendation system to recommend products to customers based on the their previous ratings for other products.
 
-##Background
+# Background
 The recommendation system will be based on Amazon dataset.
 In fact, Online e-commerce sites like Amazon, Flipkart use different recommendation models to provide different suggestions to different users.
 
@@ -41,13 +41,13 @@ Because there maybe cases where the review count is 1 or 2 but the values are 5,
 Also, we will only keep users who have given 50 or more number of ratings.
 We can only keep users who have given 50 or more number ofratings.And we will only consider products that have received at least 10 reviews.
 
-#Grouping sparce categories
+# Grouping sparce categories 
 After removing the products that have received less than 10 reviews and removing users whohave given less than 50 number of ratings,
 we found out that our new data contain outliers. We will use feature enginerring techniques to group sparcing data.
 
 We finally transform the ordered categorical attribute ’Rating’ into numeric attribute usingLabel encoding imported from the sklearn library.
 
-#Building the filtering system
+# Building the filtering system
 There are two main recommendation routes:
 •Content-based filtering  models:  Content-based  filtering  models  are  based  on  item  de-scription and user history preference, 
 and we don’t need other users’ feedback to makerecommendations.  
